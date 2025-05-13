@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <style>
-      body, html {
-        margin: 0;
-        padding: 0;
-        background: black;
-      }
-      video {
-        width: 100%;
-        height: 100%;
-      }
-    </style>
-  </head>
-  <body>
-    <video controls autoplay muted loop>
-      <source src="Impact_Landing.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Impact Video</title>
+  <style>
+    html, body {
+      margin: 0;
+      background: black;
+      height: 100%;
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop playsinline controls>
+    <source src="Impact_Landing.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</body>
 </html>
